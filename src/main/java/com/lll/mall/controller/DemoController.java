@@ -24,4 +24,9 @@ public class DemoController {
     public List<UmsMember> get() {
         return umsMemberService.queryIdLargerThan3AndSmallerThan5();
     }
+
+    @RequestMapping("/get")
+    public List<UmsMember> mockConfict() {
+        return umsMemberService.queryIdLargerThan3AndSmallerThan5();
+    }
 }
