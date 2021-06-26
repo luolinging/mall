@@ -1,9 +1,13 @@
 package com.lll.mall.controller;
 
+import com.lll.mall.domain.UmsMember;
 import com.lll.mall.service.DemoService;
+import com.lll.mall.service.impl.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author luoling
@@ -14,10 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @Autowired
-    private DemoService demoService;
+    private UmsMemberService umsMemberService;
 
     @RequestMapping("/get")
-    public String get() {
-        return demoService.get();
+    public List<UmsMember> get() {
+        return umsMemberService.queryIdLargerThan3AndSmallerThan5();
     }
 }

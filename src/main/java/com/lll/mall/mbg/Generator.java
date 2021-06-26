@@ -1,3 +1,4 @@
+/*
 package com.lll.mall.mbg;
 
 import org.mybatis.generator.api.MyBatisGenerator;
@@ -9,12 +10,14 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+*/
 /**
  * mbg代码生成器
  *
  * @author luoling
  * @date 2021/6/25 9:21
- */
+ *//*
+
 public class Generator {
     public static void main(String[] args) throws Exception {
         //MBG 执行过程中的警告信息
@@ -38,3 +41,4 @@ public class Generator {
         }
     }
 }
+*/
